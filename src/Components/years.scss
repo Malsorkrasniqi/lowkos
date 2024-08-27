@@ -1,0 +1,120 @@
+.container-years {
+  max-width: 120rem;
+  padding: 8rem 5rem;
+  margin: 0 auto;
+
+  .years-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .years-box1 {
+      max-width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+
+      img {
+        width: 70%;
+        height: auto;
+      }
+      h2 {
+        font-size: clamp(1.5rem, 4vw, 4.5rem);
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      p {
+        font-size: clamp(1rem, 1.5vw, 1.26rem);
+      }
+    }
+    .years-box2 {
+      max-width: 50%;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-years {
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 3rem;
+
+    .years-content {
+      align-items: center;
+      .years-box1 {
+        max-width: 40%;
+        img {
+          width: 50%;
+          height: auto;
+        }
+      }
+    }
+    .years-box2 {
+      max-width: 60%;
+      gap: 2rem;
+    }
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 768px) {
+  .container-years {
+    padding: 6rem 2rem;
+
+    .years-content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .years-box1 {
+        max-width: 98%;
+        align-items: center;
+        text-align: center;
+        img {
+          width: 45%;
+          height: auto;
+        }
+      }
+      .years-box2 {
+        max-width: 50%;
+        gap: 1.8rem;
+      }
+    }
+  }
+}
+
+/* Media query for very small mobile devices */
+@media (max-width: 480px) {
+  .container-years {
+    padding: 4rem 1rem;
+
+    .years-content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .years-box1 {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        img {
+          width: 45%;
+          height: auto;
+        }
+      }
+      .years-box2 {
+        max-width: 100%;
+        gap: 1rem;
+      }
+    }
+  }
+}

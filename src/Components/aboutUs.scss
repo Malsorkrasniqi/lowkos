@@ -1,0 +1,93 @@
+.container-aboutUs {
+  max-width: 120rem;
+  padding: 0 5rem;
+  margin: 0 auto;
+
+  .aboutUS-content {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    .text-aboutUS-1 {
+      max-width: 30%;
+      h2 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-weight: 400;
+        border-top: 0.2rem solid black;
+        padding-top: 1rem;
+      }
+    }
+    .text-aboutUS-2 {
+      max-width: 70%;
+      h1 {
+        font-weight: 500;
+        font-size: clamp(1.5rem, 4vw, 3.8rem);
+        line-height: 1.1;
+      }
+
+      button {
+        text-align: left;
+        background-color: white;
+        margin-left: 0.1rem;
+        margin-top: 0.1rem;
+        color: black;
+        font-size: clamp(0.9rem, 1.8vw, 2.2rem);
+        font-weight: 400;
+        border-radius: 100px;
+        text-decoration: none;
+        padding: 0.6rem 1.3rem;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-aboutUs {
+    padding: 0 3rem;
+    button {
+      padding: 0.5rem 1.2rem;
+    }
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 768px) {
+  .container-aboutUs {
+    padding: 0 2rem;
+    button {
+      padding: 0.3rem 1.2rem;
+    }
+    .aboutUS-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      .text-aboutUS-2 {
+        text-align: center;
+        max-width: 85%;
+      }
+    }
+  }
+}
+
+/* Media query for very small mobile devices */
+@media (max-width: 480px) {
+  .container-aboutUs {
+    padding: 0 1rem;
+    button {
+      padding: 0.2rem 1rem;
+    }
+    .aboutUS-content {
+      gap: 3rem;
+
+      .text-aboutUS-2 {
+        max-width: 100%;
+        button {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    li {
+      // margin-left: 20px;
+      width: 10rem;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        padding: 8px 12px;
+        display: block;
+        display: flex;
+        align-items: center;
+
+        .nav-icon {
+          margin-right: 8px;
+          font-size: 18px;
+        }
+      }
+
+      .dropdown-menu {
+        position: absolute;
+
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+
+        li {
+          display: flex;
+          align-items: flex-start;
+          padding: 10px 20px;
+          text-align: left;
+
+          .icon {
+            font-size: 20px;
+            margin-right: 10px;
+            color: #b19777;
+          }
+
+          div {
+            display: flex;
+            flex-direction: column;
+
+            a {
+              font-weight: bold;
+            }
+
+            p {
+              margin: 0;
+              font-size: 14px;
+              color: #666;
+            }
+          }
+
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+
+      li {
+        width: 100%;
+        text-align: left;
+
+        a {
+          width: 100%;
+        }
+      }
+
+      .dropdown-menu {
+        width: 100%;
+      }
+    }
+
+    .contact {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

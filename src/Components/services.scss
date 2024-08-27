@@ -1,0 +1,118 @@
+.services-container {
+  // background-color: rebeccapurple;
+  max-width: 120rem;
+  padding: 0rem 5rem;
+  margin: 0 auto;
+  // border: red 10px solid;
+
+  .services-content {
+    // background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 5%;
+    margin-bottom: 10rem;
+
+    .content-1 {
+      h1 {
+        text-align: start;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #000 50%, transparent 50%) 100%
+          1;
+
+        font-size: clamp(2rem, 5vw, 6rem);
+        font-weight: 400;
+      }
+    }
+    .content-2 {
+      display: flex;
+      align-items: self-start;
+      justify-content: space-around;
+      flex-direction: column;
+
+      .text-box {
+        h2 {
+          font-size: clamp(1.3rem, 3vw, 4rem);
+          font-weight: 500;
+          margin-bottom: 0.8rem;
+        }
+        p {
+          font-size: clamp(0.8rem, 1.5vw, 2rem);
+          font-weight: 400;
+        }
+      }
+    }
+
+    .content-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .image-StandMan {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-container {
+    padding: 0 3rem;
+  }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 864px) {
+  .services-container {
+    padding: 0 2rem;
+    .services-content {
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 3%;
+    }
+  }
+}
+
+/* Media query for very small mobile devices */
+@media (max-width: 607px) {
+  .services-container {
+    padding: 0 2rem;
+    .services-content {
+      grid-template-columns: auto;
+      grid-row: 3;
+      gap: 3%;
+
+      .content-1 {
+        h1 {
+          text-align: center;
+          border: none;
+        }
+      }
+      .content-2 {
+        flex-direction: column;
+
+        .text-box {
+          text-align: center;
+          margin-bottom: 2rem;
+          h2 {
+            font-size: clamp(1.4rem, 3vw, 4rem);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            font-size: clamp(0.9rem, 1.5vw, 2rem);
+            font-weight: 400;
+          }
+        }
+      }
+
+      .content-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-StandMan {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
