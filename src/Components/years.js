@@ -11,7 +11,7 @@ function years() {
             <div className='container-years'>
                 <div className='years-content'>
                     <div className='years-box1'>
-                        <img src={Images1}></img>
+                        <img alt='' src={Images1}></img>
                         <h2>Years of experience
                         </h2>
                         <p>Founded in 2008, LawKos is committed to the pursuit of justice in our country and more. Our team of dedicated professionals works tirelessly to serve our community. We offer legal services and consultancy in different areas.
@@ -19,8 +19,8 @@ function years() {
                     </div>
                     <div className='years-box2'>
 
-                        <img src={Images2}></img>
-                        <img src={Images3}></img>
+                        <img alt='' src={Images2}></img>
+                        <img alt='' src={Images3}></img>
                     </div>
 
                 </div>
