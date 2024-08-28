@@ -8,9 +8,9 @@ export const services = () => {
             <div className='services-container'>
                 <div className='services-content'>
                     <div className='content-1'>
-                        <h1>
+                        <h2>
                             Services
-                        </h1>
+                        </h2>
                     </div>
                     <div className='content-2'>
                         <div className='text-box' >

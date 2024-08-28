@@ -1,3 +1,8 @@
+$circle-size: 200px;
+$circle-color: #000; // Black color
+$text-color: #fff; // White color for text
+$scale-size: 50px;
+
 .container-hero {
   max-width: 120rem;
   padding: 0 5rem;
@@ -7,9 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
 
     .heder-text {
-      max-width: 40%;
+      max-width: 42%;
       h1 {
         font-size: clamp(1.8rem, 4.7vw, 5.5rem);
         font-weight: 500;
@@ -19,7 +25,7 @@
     }
 
     .hero-text-button {
-      max-width: 40%;
+      max-width: 42%;
     }
 
     p {
@@ -47,6 +53,8 @@
   }
 
   .hero-image {
+    text-align: center;
+
     .image {
       margin: 5rem 0;
       width: 100%;
@@ -69,6 +77,7 @@
     .hero-content {
       flex-direction: column;
       gap: 1.5rem;
+      padding: 0;
 
       .heder-text {
         max-width: 90%;

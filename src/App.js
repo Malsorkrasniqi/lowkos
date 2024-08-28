@@ -16,12 +16,12 @@ import Footer from './Components/footer.js';
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Hero />
       <Services />
       <AboutUs />
-      <Years />
+      {/* <Years /> */}
       <OurPracticeArea />
       <AngelofVictory />
       <TeamSection />

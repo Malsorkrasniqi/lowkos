@@ -10,10 +10,10 @@ export const AboutUs = () => {
                     <h2>about us</h2>
                 </div>
                 <div className='text-aboutUS-2'>
-                    <h1>
+                    <h2>
                         Our team consists of well-coordinated lawyers that are able to solve the most difficult tasks and cases.
-                        <button href='#'>about us <HiArrowRight /></button>
-                    </h1>
+                        <button href='#'>About us <HiArrowRight /></button>
+                    </h2>
                 </div>
             </div>
         </div>

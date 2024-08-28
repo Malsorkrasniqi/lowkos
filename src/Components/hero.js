@@ -7,10 +7,6 @@ const HeroSection = () => {
     return (
         <div className="container-hero ">
 
-
-            {/* Hero  */}
-            {/* Hero  */}
-
             <div className="hero-content">
                 <div className="heder-text">
 
